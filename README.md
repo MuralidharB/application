@@ -193,6 +193,11 @@ metadata:
   labels:
     app.kubernetes.io/name: "wordpress-01"
     app.kubernetes.io/version: "3"
+backup:
+  startdate: 04/01/2019
+  interval: 4 hrs
+  retention: 30
+  retention_type: snapshots
 spec:
   selector:
     matchLabels:
