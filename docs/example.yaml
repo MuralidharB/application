@@ -4,6 +4,10 @@ metadata:
   name: "wordpress-01"
   labels:
     app.kubernetes.io/name: "wordpress-01"
+backup:
+  startdate: 04/14/2019
+  interval: 4 hrs
+  retention: 30
 spec:
   type: "wordpress"
   selector:
